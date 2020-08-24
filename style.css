@@ -18,8 +18,8 @@ body {
 }
 
 .location, 
-.temperature,
-.extra  {
+.temperature
+{
   height: 30vh;
   width: 50%;
   display: flex;
@@ -38,8 +38,8 @@ body {
 }
 
 .degree-section span {
-  margin: 10px;
-  font-size: 30px;
+  margin-right: 10px;
+  font-size: 10px;
 }
 
 .degree-section h2 {
@@ -47,7 +47,15 @@ body {
 
 }
 
+.extra  {
+  display: flex;
+}
+
 p {
   font-size: x-small;
   opacity: 0.5;
+}
+
+h4 {
+  padding: 20px;
 }

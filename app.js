@@ -31,8 +31,10 @@ if(navigator.geolocation){
               let country = data.sys.country;
               let wind = data.wind.speed
 
-              let {description, icon} = data.weather[0];
+              let {description} = data.weather[0];
               
+              // testing
+              let icon = "13d";
               
 
               // Set DOM Elements from the API

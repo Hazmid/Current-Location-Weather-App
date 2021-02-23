@@ -34,7 +34,7 @@ if(navigator.geolocation){
               let {description} = data.weather[0];
               
               // testing
-              let icon = "13d";
+              let icon = "13n";
               
 
               // Set DOM Elements from the API
@@ -49,6 +49,7 @@ if(navigator.geolocation){
 
               // Set icon
               setIcons(icon, document.querySelector(".icon"));
+              console.log(icon);
 
               //onclick to fahrenheit
               temperatureSection.addEventListener('click', () => {

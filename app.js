@@ -31,11 +31,9 @@ if(navigator.geolocation){
               let country = data.sys.country;
               let wind = data.wind.speed
 
-              let {description} = data.weather[0];
+              let {description, icon} = data.weather[0];
               
-              // testing
-              let icon = "11n";
-              
+           
 
               // Set DOM Elements from the API
               temperatureDegree.textContent = celsius;
@@ -94,19 +92,46 @@ if(navigator.geolocation){
           case "02n":
             skycons.add(document.querySelector(".icon"), Skycons.PARTLY_CLOUDY_NIGHT);
             break;
-          case "03d","03n","04d","04n":
+          case "03d":
             skycons.add(document.querySelector(".icon"), Skycons.CLOUDY);
             break;
-          case "09d", "09n":
+          case "03n":
+            skycons.add(document.querySelector(".icon"), Skycons.CLOUDY);
+            break;
+          case "04d":
+            skycons.add(document.querySelector(".icon"), Skycons.CLOUDY);
+            break;
+          case "04n":
+            skycons.add(document.querySelector(".icon"), Skycons.CLOUDY);
+            break;
+          case "09d":
             skycons.add(document.querySelector(".icon"), Skycons.RAIN);
             break;
-          case "10d", "10n", "11d", "11n":
+          case "09n":
+            skycons.add(document.querySelector(".icon"), Skycons.RAIN);
+            break;
+          case "10d":
             skycons.add(document.querySelector(".icon"), Skycons.SLEET);
             break;
-          case "13d", "13n":
+          case "10n":
+            skycons.add(document.querySelector(".icon"), Skycons.SLEET);
+            break;
+          case "11d":
+            skycons.add(document.querySelector(".icon"), Skycons.SLEET);
+            break;
+          case "11n":
+            skycons.add(document.querySelector(".icon"), Skycons.SLEET);
+            break;
+          case "13d":
             skycons.add(document.querySelector(".icon"), Skycons.SNOW);
             break;
-          case "50d", "50n":
+          case "13n":
+            skycons.add(document.querySelector(".icon"), Skycons.SNOW);
+            break;
+          case "50d":
+            skycons.add(document.querySelector(".icon"), Skycons.FOG);
+            break;
+          case "50n":
             skycons.add(document.querySelector(".icon"), Skycons.FOG);
             break;
           default: "???";

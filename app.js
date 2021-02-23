@@ -47,7 +47,7 @@ if(navigator.geolocation){
 
               // Set icon
               setIcons(icon, document.querySelector(".icon"));
-              console.log(icon);
+              
 
               //onclick to fahrenheit
               temperatureSection.addEventListener('click', () => {

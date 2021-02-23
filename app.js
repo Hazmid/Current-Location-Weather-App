@@ -34,7 +34,7 @@ if(navigator.geolocation){
               let {description} = data.weather[0];
               
               // testing
-              let icon = "03d";
+              let icon = "13d";
               
 
               // Set DOM Elements from the API

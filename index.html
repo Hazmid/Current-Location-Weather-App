@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <title>Current Location Weather App</title>
+    <title>Current Location Weather</title>
 </head>
 <body>
     <div class="header">
@@ -16,6 +16,11 @@
     
     <div class="main">
         
+         <div class="first">
+            <canvas class="icon" width="200" height="200"></canvas>
+            <div class="temperature-description"><img src="img/Rolling.svg" alt="roller"></div>
+        </div>
+        
         <div class="degree-section">
             <h2 class="temperature-degree">...</h2>
             <div class="toggle">
@@ -25,11 +30,7 @@
         </div>
 
 
-        <div class="temperature">
-            <canvas class="icon" width="128" height="128"></canvas>
-            <div class="temperature-description"><img src="img/Rolling.svg" alt="roller"></div>
-        </div>
-        
+       
         <div class="extra">
             <h4 class="wind">...</h4>
             <h4 class="humidity">...</h4>

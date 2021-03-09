@@ -24,13 +24,19 @@ body {
   
  }
 
+.beforemain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .main {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: purple;
+  color: white;
   width: 70%;
   border-radius: 20px;  
   background: white;
@@ -63,7 +69,7 @@ body {
 }
 
 .temperature-description {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .comment {
@@ -71,3 +77,8 @@ body {
   opacity: 0.5;
 }
 
+ .first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

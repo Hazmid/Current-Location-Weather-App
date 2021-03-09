@@ -51,7 +51,7 @@ body {
   display: flex;
 }
 
-p {
+.comment {
   font-size: x-small;
   opacity: 0.5;
 }

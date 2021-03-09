@@ -8,7 +8,8 @@
 
 body {
   height: 100vh;
-  background-image: linear-gradient(-20deg, #58d5af 0%, #24c7d2 100%);
+  background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa);
+  background: linear-gradient(to right, #2980b9, #6dd5fa); 
   font-family: 'Cantarell', sans-serif;
  
 }

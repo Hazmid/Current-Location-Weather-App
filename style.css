@@ -22,15 +22,18 @@ body {
 
 
 .degree-section {
+  position: relative;
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 10px;
 }
 
-.degree-section span {
+.toggle {
+  position: absolute;
   margin-right: 10px;
   font-size: 20px;
+  right: 0;
+  top: 30%;
 }
 
 .degree-section h2 {

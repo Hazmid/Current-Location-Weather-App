@@ -64,7 +64,7 @@ h4 {
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 40px;
   

@@ -39,8 +39,8 @@ if(navigator.geolocation){
               temperatureDegree.textContent = celsius;
               temperatureDescription.textContent = description;
               locationTimezone.textContent = `${city}/${country}`;
-              humiditySection.textContent = `humidity = ${humidity}%`;
-              windSection.textContent = `wind = ${wind} mph`;
+              humiditySection.textContent = ` ${humidity} %`;
+              windSection.textContent = ` ${wind} mph`;
 
               // Formula for fahrenheit
               let fahrenheit = (celsius * 9/5) + 32;

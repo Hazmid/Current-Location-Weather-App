@@ -17,7 +17,7 @@ body {
 .main { 
   background: white;
   background: linear-gradient( to right top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-  height: 60vh;
+  height: 70vh;
 }
 
 
@@ -26,3 +26,8 @@ body {
   margin-right: 30rem;
 }
 
+@media (max-width: 768px){
+  .degree-section {
+    margin-right: 0;
+  }
+}

@@ -29,6 +29,10 @@ body {
   margin-right: 30rem;
 }
 
+.grass{
+ background-image: url(img/grass.svg);
+}
+
 @media (max-width: 768px){
   .degree-section {
     margin-right: 0;

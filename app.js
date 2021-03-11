@@ -8,6 +8,8 @@ window.addEventListener('load', ()=>{
   let windSection = document.querySelector(".wind");
   let humiditySection = document.querySelector(".humidity");
   const temperatureSpan = document.querySelector('.degree-section span');
+  let dater = document.querySelector(".date");
+
 
   
 if(navigator.geolocation){
@@ -28,7 +30,6 @@ if(navigator.geolocation){
               const celsius = Math.floor(temp - 273.15);
               
               let city = data.name;
-              let country = data.sys.country;
               let wind = data.wind.speed
 
               let {description, icon} = data.weather[0];
@@ -38,15 +39,20 @@ if(navigator.geolocation){
               // Set DOM Elements from the API
               temperatureDegree.textContent = celsius;
               temperatureDescription.textContent = description;
-              locationTimezone.textContent = `${city}/${country}`;
-              humiditySection.textContent = `    ${humidity} %`;
-              windSection.textContent = `    ${wind} mph`;
+              locationTimezone.textContent = `${city}`;
+              humiditySection.textContent = `${humidity} %`;
+              windSection.textContent = `${wind} mph`;
 
               // Formula for fahrenheit
               let fahrenheit = (celsius * 9/5) + 32;
 
               // Set icon
               setIcons(icon, document.querySelector(".icon"));
+
+              //set Date
+              let d = new Date().toLocaleTimeString();
+              dater.innerHTML = d.replace(/:\d+ /, ' ');
+
               
 
               //onclick to fahrenheit
@@ -65,7 +71,7 @@ if(navigator.geolocation){
 } else {
   h3.textContent = "hey, this won't work until you grant location permission."
 };
-
+      //getting icons
       function setIcons(icon) {
         const skycons = new Skycons({ color: "white" });
         skycons.play();

@@ -29,14 +29,17 @@ body {
   margin-right: 30rem;
 }
 
-.grass{
-   background-image: url("img/Grass.svg");
-  -webkit-backdrop-filter: blur(2rem);
-  backdrop-filter: blur(2rem);
+.tree{
+  width: 50rem;
 }
 
 @media (max-width: 768px){
   .degree-section {
     margin-right: 0;
   }
+  
+  .tree{
+  width: 20rem;
+  }
+  
 }

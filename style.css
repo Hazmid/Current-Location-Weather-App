@@ -30,7 +30,7 @@ body {
 }
 
 .grass{
- background-image: url(img/grass.svg);
+ background-image: url("img/Grass.svg");
 }
 
 @media (max-width: 768px){

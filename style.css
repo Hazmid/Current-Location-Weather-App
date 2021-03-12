@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa);
   background: linear-gradient(to right, #2980b9, #6dd5fa); 
@@ -18,9 +18,9 @@ body {
 .main { 
   background: white;
   background: linear-gradient( to right top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-  -moz-backdrop-filter: blur(2rem)
-  -webkit-backdrop-filter: blur(2rem);
-  backdrop-filter: blur(2rem);
+  -moz-backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
 }
 
 
@@ -39,7 +39,7 @@ body {
   }
   
   .tree{
-  width: 20rem;
+  width: 30rem;
   }
   
 }

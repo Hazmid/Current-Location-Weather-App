@@ -6,13 +6,15 @@
   box-sizing: border-box;
 }
 
+html{
+  height: 100%;
+}
+
 body {
-  height: 90vh;
   width: 100%;
   background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa);
   background: linear-gradient(to right, #2980b9, #6dd5fa); 
   font-family: 'Cantarell', sans-serif;
- 
 }
 
 .main { 

@@ -1,47 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap');
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-  height: 100%;
+html {
+    height: 100%;
 }
 
 body {
-  width: 100%;
-  background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa);
-  background: linear-gradient(to right, #2980b9, #6dd5fa); 
-  font-family: 'Cantarell', sans-serif;
+    width: 100%;
+    background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa);
+    background: linear-gradient(to right, #2980b9, #6dd5fa);
+    font-family: 'Cantarell', sans-serif;
 }
 
-.main { 
-  background: white;
-  background: linear-gradient( to right top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-  -moz-backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
+.main {
+    background: white;
+    background: linear-gradient( to right top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    -moz-backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
 }
-
 
 .degree-section {
-  cursor: pointer;
-  margin-right: 30rem;
+    cursor: pointer;
+    margin-right: 30rem;
 }
 
-.tree{
-  width: 50rem;
+.tree {
+    width: 50rem;
 }
 
-@media (max-width: 768px){
-  .degree-section {
-    margin-right: 0;
-  }
-  
-  .tree{
-  width: 30rem;
-  }
-  
+@media (max-width: 768px) {
+    .degree-section {
+        margin-right: 0;
+    }
+    .tree {
+        width: 30rem;
+    }
 }
